@@ -61,8 +61,8 @@ String operations : .upper > upper case
 
 """
 Week 2
-Tuples: oredered sequence > immutable, with ()
-Lists: like tuple, ,mutable, and []
+Tuples: oredered sequence > IMMUTABLE (value CANNOT change), written with ()
+Lists: like tuple, ,MUTABLE (value can change), and uses []
 + another list or .extend([])
 .append([]) adds only one element to the list
 .del() > to delete some elements of a list
@@ -70,5 +70,5 @@ Lists: like tuple, ,mutable, and []
 .sorted() sorts a tuple or list
 .index() gives the index in the tuple/list
  = is aliasing, B changes when A changes
- B=A[:] is cloning, B does not change when A changes
+ B=A[:] B is CLONING A, B does not change when A changes
  
