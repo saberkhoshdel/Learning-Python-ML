@@ -38,6 +38,7 @@ type(x): float
 #Lab
 # Try your first Python output
 print('Hello, Python!')
+# " or ' both work
 
 # Check the Python Version
 import sys
@@ -45,4 +46,29 @@ print(sys.version)
 
 # System settings about float type
 sys.float_info
-#
+
+"""
+Strings
+' or " work
+Sequencing starts at zero
+negativ eindexing starts from -1
+Name[0:3] 0 is start, 3 is the 3rd in sequence [2]
+Back slash is the begining of an escape seq
+Place r before ' or use \\ for actual back slash in a string
+String operations : .upper > upper case
+.replace("...",",,,")
+"""
+
+"""
+Week 2
+Tuples: oredered sequence > immutable, with ()
+Lists: like tuple, ,mutable, and []
++ another list or .extend([])
+.append([]) adds only one element to the list
+.del() > to delete some elements of a list
+.split(",")> separates a string at each space or to any char to a list
+.sorted() sorts a tuple or list
+.index() gives the index in the tuple/list
+ = is aliasing, B changes when A changes
+ B=A[:] is cloning, B does not change when A changes
+ 
