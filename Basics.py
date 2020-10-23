@@ -72,3 +72,5 @@ Lists: like tuple, ,MUTABLE (value can change), and uses []
  = is aliasing, B changes when A changes
  B=A[:] B is CLONING A, B does not change when A changes
  
+ Disctionaries:
+{"key1":value1, "key2":"value2"}
