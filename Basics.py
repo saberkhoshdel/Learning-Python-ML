@@ -74,3 +74,12 @@ Lists: like tuple, ,MUTABLE (value can change), and uses []
  
  Disctionaries:
 {"key1":value1, "key2":"value2"}
+Keys can be immutable objects such as tuples
+Keys can only be strings, numbers, or tuples, but values can be any data type.
+
+dict["key1"] >> value1
+dict.keys()  >> gives the keys
+dict.values()
+del(dict['key1'])
+
+"key1" in dict >> True
