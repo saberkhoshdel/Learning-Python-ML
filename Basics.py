@@ -51,7 +51,7 @@ sys.float_info
 Strings
 ' or " work
 Sequencing starts at zero
-negativ eindexing starts from -1
+negative indexing starts from -1
 Name[0:3] 0 is start, 3 is the 3rd in sequence [2]
 Back slash is the begining of an escape seq
 Place r before ' or use \\ for actual back slash in a string
