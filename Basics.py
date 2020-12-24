@@ -83,4 +83,94 @@ dict.values()
 del(dict['key1'])
 
 "key1" in dict >> True
-up
+
+Sets {}
+No duplicates allowed
+.add() adds an element
+.remove() removes
+"exmaple" in A   >> to check
+set1 & set2 >> intersection  or .intersection
+set1.difference(set2)  >> finds the differences
+.union
+.issubset
+.issuperset
+"""
+
+"""
+Week 3
+Conditions and Branching
+== and != for comparison
+
+if age>18:
+    print('you can enter')
+elif age==18:
+    print('go see Pink Floyd')
+else:
+    print('go see Meat Loaf')
+print('move on')    >> prints this line anyway
+
+if or ()  if and if not ()
+if not (): = if !=
+
+Loops
+range(n) > Range(0,n-1) a range of n items 
+
+dates = [1982,1980,1973]
+N = len(dates)
+
+for i in range(N):
+    print(dates[i])
+    
+for year in dates:  
+    print(year)   
+    
+    
+squares = ['red', 'yellow', 'green', 'purple', 'blue']
+for i, square in enumerate(squares):           #passes index to i and value to square
+    print(i, square)
+  
+While Loop
+dates = [1982, 1980, 1973, 2000]
+i = 0
+year = 0
+while(year != 1973):
+    year = dates[i]
+    i = i + 1
+    print(year)
+print("It took ", i ,"repetitions to get out of loop.")
+
+
+Genres = ['rock', 'R&B', 'Soundtrack', 'R&B', 'soul', 'pop']
+for Genre in Genres:
+    print(Genre)
+    
+For loop does the looping ovr a given range, however, for While we need to make the range 
+
+squares = ['orange', 'orange', 'purple', 'blue ', 'orange']
+new_squares = []
+i = 0
+while(squares[i] == 'orange'):
+    new_squares.append(squares[i])
+    i = i + 1
+    
+    
+Functions
+def function(input):
+    output=input+1
+return output
+
+built-in functions: 
+sorted does not change the original list
+sort, sorts that list
+Mult can work on strings
+"pass" as none in function
+
+def Print(A):
+    for a in A:
+        print(a+'1')
+Print(['a','b']) >>> a1 , b1     
+
+Global vs local variable
+add key "global" wihtin function to become global variable   
+packing function inputs using *
+oacking funxtion inputs into dictionary using **
