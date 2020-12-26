@@ -174,3 +174,69 @@ Global vs local variable
 add key "global" wihtin function to become global variable   
 packing function inputs using *
 oacking funxtion inputs into dictionary using **
+
+Class***
+Object is realization/instant of a class/type
+class Circle(object):
+    def _init_(self, radius, color):
+        self.radius = radius
+        self.color = color
+dir(NameofObject): >> attributes        
+
+exmaple:
+class analysedText(object):
+
+    def __init__ (self, text):
+        # remove punctuation
+        formattedText = text.replace('.','').replace('!','').replace('?','').replace(',','')
+
+        # make text lowercase
+        formattedText = formattedText.lower()
+
+        self.fmtText = formattedText
+
+    def freqAll(self):        
+        # split text into words
+        wordList = self.fmtText.split(' ')
+
+        # Create dictionary
+        freqMap = {}
+        for word in set(wordList): # use set to remove duplicates in list
+            freqMap[word] = wordList.count(word)
+
+        return freqMap
+
+    def freqOf(self,word):
+        # get frequency map
+        freqDict = self.freqAll()
+
+        if word in freqDict:
+            return freqDict[word]
+        else:
+            return 0
+            
+            
+Expections****
+a = 1
+
+try:
+    b = int(input("Please enter a number to divide a"))
+    a = a/b
+except ZeroDivisionError:
+    print("The number you provided cant divide 1 because it is 0")
+except ValueError:
+    print("You did not provide a number")
+except:
+    print("Something went wrong")
+else:
+    print("success a=",a)
+    
+"""
+
+"""
+****Week4
+Open
+
+# Read first four characters
+with open(example1, "r") as file1:
+    print(file1.read(4))
