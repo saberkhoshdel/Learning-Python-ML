@@ -240,3 +240,48 @@ Open
 # Read first four characters
 with open(example1, "r") as file1:
     print(file1.read(4))
+
+
+Pandas
+>import pandas as pd
+#it includes dataframe
+df = pd.read_csv(csv_path)
+variable = pd.DataFrame(dictionary_name)
+
+we can find a value in dataframe with loc (label based), or iloc(integer based) or ix(by label or integer)
+df.loc[0, 'Artis'] : Michael Jackson
+
+Working with Pandas:
+df1 = df[ df[''columnName'] >= SomeValue]
+df1.to_csv('new_dataframe.csv')
+
+
+*Numpy - 1D
+A numpy array is similar to a list. It's usually fixed in size and each element is of the same type. 
+We can cast a list to a numpy array by first importing numpy:
+
+import numpy as np 
+a = np.array([0, 1, 2, 3, 4])
+type(a) : numpy.ndarray
+a.dtype : dtype('int64')
+a[3:5] = 300,400    # slicing and assigning 4th and 5th elements
+
+Assign value with list:
+select = [0, 2, 3]
+a[select] = 10
+a.size >5
+a.ndim : 1
+a.shape : (5,0)
+a.mean < average
+a.std > standard deviation
+
+np.dot(u, v)
+
+np.pi > math pi
+
+# Makeup a numpy array within [-2, 2] and 5 elements
+np.linspace(-2, 2, num=5)
+
+x = np.linspace(0, 2*np.pi, num=100)
+y = np.sin(x)
+plt.plot(x, y)
