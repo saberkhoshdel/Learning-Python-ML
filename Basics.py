@@ -269,7 +269,7 @@ a[3:5] = 300,400    # slicing and assigning 4th and 5th elements
 Assign value with list:
 select = [0, 2, 3]
 a[select] = 10
-a.size >5
+a.size : 5
 a.ndim : 1
 a.shape : (5,0)
 a.mean < average
@@ -285,3 +285,27 @@ np.linspace(-2, 2, num=5)
 x = np.linspace(0, 2*np.pi, num=100)
 y = np.sin(x)
 plt.plot(x, y)
+
+*Numpy - 2D
+a = [[11, 12, 13], [21, 22, 23], [31, 32, 33]]
+A = np.array(a)
+A[1, 2] : A[1][2] = 23
+A.T : transposed matrix
+
+HTTP *
+import requests
+#plus other libraries
+import os 
+from PIL import Image
+from IPython.display import IFrame
+
+url='https://www.ibm.com/'
+r=requests.get(url)
+r.status_code  : 200 #ok
+print(r.request.headers)
+header=r.headers
+
+with open(path,'wb') as f:
+    f.write(r.content)
+Image.open(path)  
+
